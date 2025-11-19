@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #343dff, #7a30ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container{
+    background: #fff;
+    padding: 2rem;
+    width: 350px;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: fade 0.4s ease;
+}
+
+h1{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#joke{
+    font-size: 1.1rem;
+    margin: 1rem 0 1.5rem;
+    color: #333;
+    line-height: 1.5rem;
+}
+
+button{
+    padding: 0.8rem 1.3rem;
+    border: none;
+    background: #6c3cff;
+    color: #fff;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.2s ease;
+}
+
+button:hover{
+    background: #5222e9;
+}
+
+#dev{
+    font-size: 14px;
+    position: relative;
+    top: 30px;
+    left: 90px;
+    color: #a17103;
+}
+
+@keyframes fade{
+    from{opacity:0; transform: translateY(10px);}
+    to{opacity:1; transform: translateY(0);}
+}
+
+
+/* For tablets (width ≤ 768px) */
+@media (max-width: 768px) {
+    #dev {
+        font-size: 12px;
+        top: 20px;
+        left: 50px;
+    }
+}
+
+/* For mobile (width ≤ 480px) */
+@media (max-width: 480px) {
+    #dev {
+        font-size: 10px;
+        top: 15px;
+        left: 20px;
+    }
+}
+
+
+/* --------------------------------- */
+/* 📱 Mobile Devices (Small Phones) */
+/* --------------------------------- */
+@media (max-width: 480px) {
+    .container{
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    #joke{
+        font-size: 1rem;
+        margin-top: 0.8rem;
+    }
+
+    button{
+        width: 100%;
+        padding: 0.9rem;
+        font-size: 1rem;
+    }
+}
+
+/* --------------------------------- */
+/* 📱 Tablets / Medium Screens */
+/* --------------------------------- */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        width: 65%;
+        padding: 2rem;
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+
+    #joke{
+        font-size: 1.05rem;
+    }
+}
+
+/* --------------------------------- */
+/* 🖥️ Larger Screens / Laptops */
+/* --------------------------------- */
+@media (min-width: 1024px) {
+    .container {
+        width: 400px;
+    }
+}
